@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -24,6 +25,14 @@
                                     <segue destination="9km-y9-7IK" kind="show" identifier="startAdventure" id="hba-Ov-HNd"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QMR-go-KIt">
+                                <rect key="frame" x="44" y="450" width="512" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="V9t-5S-8Pa"/>
+                                </connections>
+                            </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Beginning" translatesAutoresizingMaskIntoConstraints="NO" id="dDi-To-LYA">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                             </imageView>
@@ -34,15 +43,22 @@
                             <constraint firstAttribute="trailing" secondItem="dDi-To-LYA" secondAttribute="trailing" id="Bs4-NS-o3h"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dDi-To-LYA" secondAttribute="bottom" id="MLZ-yN-P1O"/>
                             <constraint firstItem="dDi-To-LYA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="OcM-1q-Ydy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QMR-go-KIt" secondAttribute="trailing" constant="24" id="bBH-vZ-r1V"/>
+                            <constraint firstItem="QMR-go-KIt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="dj0-rF-68O"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="er9-KJ-nfP" secondAttribute="bottom" constant="40" id="naN-BT-kZw"/>
                             <constraint firstItem="dDi-To-LYA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ncW-YT-yzw"/>
+                            <constraint firstItem="er9-KJ-nfP" firstAttribute="top" secondItem="QMR-go-KIt" secondAttribute="bottom" constant="50" id="tUs-2p-PV6"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Oyd-n3-Gsm"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="QMR-go-KIt" id="DM6-Hs-ZCi"/>
+                        <outlet property="textFieldBodyButtonConstraint" destination="tUs-2p-PV6" id="1e1-gh-xnD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749" y="435"/>
+            <point key="canvasLocation" x="767" y="525"/>
         </scene>
         <!--Page Controller-->
         <scene sceneID="b9Y-hI-eDc">

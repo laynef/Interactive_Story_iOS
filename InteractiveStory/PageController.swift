@@ -109,5 +109,6 @@ class PageController: UIViewController {
     
     func playAgain() {
         navigationController?.popToRootViewControllerAnimated(true)
+        
     }
 }
