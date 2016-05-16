@@ -39,7 +39,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                     }
                     
                     if let pageController = segue.destinationViewController as? PageController {
-                        pageController.page = Adventure.story("Layne")
+                        pageController.page = Adventure.story(name)
                     }
                 }
             } catch Error.noName {
@@ -66,7 +66,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func keyboardWillHide(notification: NSNotification) {
         UIView.animateWithDuration(0.8) {
-            self.textFieldBodyButtonConstraint.constant = 50.0
+            self.textFieldBodyButtonConstraint.constant = 19.0
             self.view.layoutIfNeeded()
         }
     }

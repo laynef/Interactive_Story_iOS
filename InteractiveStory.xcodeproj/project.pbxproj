@@ -17,6 +17,9 @@
 		D97BDEC21CC54A5200F7BDDA /* InteractiveStoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97BDEC11CC54A5200F7BDDA /* InteractiveStoryUITests.swift */; };
 		D97BDED01CC55DD500F7BDDA /* InteractiveStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97BDECF1CC55DD500F7BDDA /* InteractiveStory.swift */; };
 		D97BDED21CC57AAA00F7BDDA /* PageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97BDED11CC57AAA00F7BDDA /* PageController.swift */; };
+		D9B35B781CC5D62A005E49B4 /* HappyEnding.wav in Resources */ = {isa = PBXBuildFile; fileRef = D9B35B751CC5D62A005E49B4 /* HappyEnding.wav */; };
+		D9B35B791CC5D62A005E49B4 /* Ominous.wav in Resources */ = {isa = PBXBuildFile; fileRef = D9B35B761CC5D62A005E49B4 /* Ominous.wav */; };
+		D9B35B7A1CC5D62A005E49B4 /* PageTurn.wav in Resources */ = {isa = PBXBuildFile; fileRef = D9B35B771CC5D62A005E49B4 /* PageTurn.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		D97BDEC31CC54A5200F7BDDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D97BDECF1CC55DD500F7BDDA /* InteractiveStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveStory.swift; sourceTree = "<group>"; };
 		D97BDED11CC57AAA00F7BDDA /* PageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageController.swift; sourceTree = "<group>"; };
+		D9B35B751CC5D62A005E49B4 /* HappyEnding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = HappyEnding.wav; sourceTree = "<group>"; };
+		D9B35B761CC5D62A005E49B4 /* Ominous.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Ominous.wav; sourceTree = "<group>"; };
+		D9B35B771CC5D62A005E49B4 /* PageTurn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = PageTurn.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				D97BDE9D1CC54A5200F7BDDA /* InteractiveStory */,
+				D9B35B741CC5D602005E49B4 /* Resources */,
 				D97BDEB51CC54A5200F7BDDA /* InteractiveStoryTests */,
 				D97BDEC01CC54A5200F7BDDA /* InteractiveStoryUITests */,
 				D97BDE9C1CC54A5200F7BDDA /* Products */,
@@ -132,6 +139,17 @@
 				D97BDEC31CC54A5200F7BDDA /* Info.plist */,
 			);
 			path = InteractiveStoryUITests;
+			sourceTree = "<group>";
+		};
+		D9B35B741CC5D602005E49B4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D9B35B751CC5D62A005E49B4 /* HappyEnding.wav */,
+				D9B35B761CC5D62A005E49B4 /* Ominous.wav */,
+				D9B35B771CC5D62A005E49B4 /* PageTurn.wav */,
+			);
+			name = Resources;
+			path = InteractiveStory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,8 +256,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9B35B791CC5D62A005E49B4 /* Ominous.wav in Resources */,
 				D97BDEAC1CC54A5200F7BDDA /* LaunchScreen.storyboard in Resources */,
 				D97BDEA91CC54A5200F7BDDA /* Assets.xcassets in Resources */,
+				D9B35B781CC5D62A005E49B4 /* HappyEnding.wav in Resources */,
+				D9B35B7A1CC5D62A005E49B4 /* PageTurn.wav in Resources */,
 				D97BDEA41CC54A5200F7BDDA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,6 +515,7 @@
 				D97BDEC81CC54A5200F7BDDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D97BDEC91CC54A5200F7BDDA /* Build configuration list for PBXNativeTarget "InteractiveStoryTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +524,7 @@
 				D97BDECB1CC54A5200F7BDDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D97BDECC1CC54A5200F7BDDA /* Build configuration list for PBXNativeTarget "InteractiveStoryUITests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +533,7 @@
 				D97BDECE1CC54A5200F7BDDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
